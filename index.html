@@ -13,31 +13,64 @@
     <link rel="stylesheet" href="style.css" />
     <title>Convertly</title>
   </head>
-  <body class="w-screen min-h-screen font-[Domine] bg-black">
-    <main class="w-full h-screen flex flex-col items-center justify-center">
-      <section class="bg-[#1F2937] w-[420px] sm:w-[550px]">
-        <div class="bg-[#6943FF] flex flex-col items-center p-6 sm:p-8 w-full">
+  <body class="w-full min-h-screen font-[Domine] bg-black">
+    <main
+      class="w-full min-h-screen flex flex-col items-center justify-center py-8 sm:py-16 px-4"
+    >
+      <section class="bg-[#1F2937] max-w-[420px] sm:max-w-[550px] rounded-sm">
+        <div
+          class="bg-[#6943FF] flex flex-col items-center p-6 sm:p-8 w-full rounded-t-sm gap-6"
+        >
           <h1
             class="text-2xl sm:text-[28px] text-white font-extrabold text-center"
           >
             Metric/Imperial Unit Conversion
           </h1>
-          <p>20</p>
-          <button>Convert</button>
+          <input
+            class="w-[150px] h-[84px] rounded-sm border-[2px] border-[#b295ff] outline-none p-2 text-6xl font-extrabold text-white text-center"
+            type="number"
+            name="numberInput"
+            id="numberInput"
+          />
+          <button
+            class="bg-white text-base rounded-sm px-8 py-2 font-medium text-[#3d3d3d] cursor-pointer hover:bg-[#B295FF99] hover:text-white"
+          >
+            Convert
+          </button>
         </div>
 
-        <div class="w-full flex flex-col px-6 py-8 bg-[#1F2937]">
-          <div>
-            <h2>Length (Meter/Feet)</h2>
-            <p>20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+        <div
+          class="w-full flex flex-col px-6 py-8 bg-[#1F2937] rounded-b-sm gap-6"
+        >
+          <div
+            class="w-full bg-[#273549] py-8 items-center flex flex-col gap-2 rounded-md px-2"
+          >
+            <h2 class="text-xl font-semibold text-[#CCC1FF] text-center">
+              Length (Meter/Feet)
+            </h2>
+            <p class="text-sm text-white text-center">
+              20 meters = 65.616 feet | 20 feet = 6.096 meters
+            </p>
           </div>
-          <div>
-            <h2>Volume (Liters/Gallons)</h2>
-            <p>20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
+          <div
+            class="w-full bg-[#273549] py-8 items-center flex flex-col gap-2 rounded-md px-2"
+          >
+            <h2 class="text-xl font-semibold text-[#CCC1FF] text-center">
+              Volume (Liters/Gallons)
+            </h2>
+            <p class="text-sm text-white text-center">
+              20 liters = 5.284 gallons | 20 gallons = 75.708 liters
+            </p>
           </div>
-          <div>
-            <h2>Mass (Kilograms/Pounds)</h2>
-            <p>20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos</p>
+          <div
+            class="w-full bg-[#273549] py-8 items-center flex flex-col gap-2 rounded-md px-2"
+          >
+            <h2 class="text-xl font-semibold text-[#CCC1FF] text-center">
+              Mass (Kilograms/Pounds)
+            </h2>
+            <p class="text-sm text-white text-center">
+              20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos
+            </p>
           </div>
         </div>
       </section>
